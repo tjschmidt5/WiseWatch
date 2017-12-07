@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.unc.tjschmidt.wisewatch.MedicationMain">
+
+    <Button
+        android:id="@+id/addBtn"
+        android:text="Add New Medication Reminder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addItems"/>
+    <ListView
+        android:id="@+id/medlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="false"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ask staff for help!"
+        android:layout_gravity="center"
+        android:onClick="requestHelp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendrequest"
+        android:background="@android:color/transparent"
+        android:onClick="sendRequest"
+        android:text=""/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency!"
+        android:id="@+id/emergency"
+        android:onClick="signalEmergency"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/voice"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set up or edit geo-fence"
+        android:onClick="geofenceButton"/>
+
+
+
+</LinearLayout>
